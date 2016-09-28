@@ -1,0 +1,28 @@
+	poner alias (ahora checkout == co y status==st)
+git config --global alias.co checkout
+git config --global alias.st status
+git config --global alias.lo "log --oneline --decorate --graph --all"
+	iniciar un repositorio en la carpeta donde voy a trabajar
+git init
+	Registrar los cambios
+		Añadir archivos al stage
+git add <file>
+		Ver el estado de los archivos
+git st
+	Ignorar archivos .gitignore
+touch .gitignore
+	ver diferencias de lo que se ha cambiado
+git diff --staged
+	Hacer commit
+git commit -m "un mensaje de cambio"
+	Untrackear un archivo
+git mr <file> --cached
+	Quitar del stateg
+git reset HEAD <file>
+	Quitar modificacion del archivo
+git checkout --hola.rb
+git whatchanged
+	Crear una nueva rama
+git checkout -b <nombre>
+	mezclar rama principal con una mencionada
+git merge <nombre de la rama>
